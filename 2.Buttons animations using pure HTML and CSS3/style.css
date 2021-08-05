@@ -1,0 +1,203 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: gainsboro;
+    padding-top: 50px;
+}
+h1
+{
+ width: 400px;   
+ font-size: 50px;
+ color:palevioletred;
+ padding-bottom: 10px;
+}
+
+.button-container
+{
+    height: 300px;
+    width: 300px;
+}
+
+.btn
+{
+    display: flex;
+    width: 100px;
+    margin: 35px;
+    padding: 12px 65px;
+    font-size: 20px;
+    justify-content: center;
+    border: none;
+    box-shadow: 0px 0px 6px;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+
+/* ---------------------shake----------------------- */
+.shake
+{
+    background-color:salmon;
+}
+.shake:hover
+{
+    animation: shake .25s ease-in-out;
+}
+@keyframes shake 
+{
+    0%
+    {
+        transform: translateX(0px)
+    }
+    25%
+    {
+        transform: translateX(20px)
+    }
+    50%
+    {
+        transform: translateX(0px)
+    }
+    75%
+    {
+        transform: translateX(-10px)
+    }
+    100%
+    {
+        transform: translateX(0px)
+    }
+}
+
+/* ---------------------bounce----------------------- */
+.bounce
+{
+    background-color:rgb(204, 0, 255);
+}
+.bounce:hover
+{
+    animation: bounce .25s ease-in-out;
+}
+@keyframes bounce 
+{
+    0%
+    {
+        transform: translateY(0px)
+    }
+    25%
+    {
+        transform: translateY(50px)
+    }
+    50%
+    {
+        transform: translateY(0px)
+    }
+    75%
+    {
+        transform: translateY(-20px)
+    }
+    100%
+    {
+        transform: translateY(0px)
+    }
+}
+
+/* ---------------------flash----------------------- */
+.flash
+{
+    background-color:rgb(108, 96, 219);
+}
+.flash:hover
+{
+    animation: flash .20s ease-in-out;
+}
+@keyframes flash  
+{
+    0%
+    {
+        opacity: 1;
+    }
+    25%
+    {
+        opacity: 0.5;
+    }
+    50%
+    {
+        opacity: 0;
+    }
+    75%
+    {
+        opacity: 0.5;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+/* ---------------------scale----------------------- */
+.scale
+{
+    background-color:rgb(250, 150, 36);
+}
+.scale:hover
+{
+    animation: scale .55s ease-in-out;
+}
+@keyframes scale 
+{
+    0%
+    {
+        transform:scale(1, 1) 
+    }
+    25%
+    {
+        transform: scale(1.5, 1.5)
+    }
+    50%
+    {
+        transform:scale(0.5, 0.5)
+    }
+    75%
+    {
+        transform: scale(1.5, 1.5)
+    }
+    100%
+    {
+        transform: scale(1, 1)
+    }
+}
+
+/* ---------------------swing----------------------- */
+.swing
+{
+    background-color:rgb(48, 211, 33);
+}
+.swing:hover
+{
+    animation: swing .25s ease-in-out;
+}
+@keyframes swing 
+{
+    0%
+    {
+        transform:rotate(0deg);
+    }
+    25%
+    {
+        transform:rotate(20deg);
+    }
+    50%
+    {
+        transform:rotate(0deg);
+    }
+    75%
+    {
+        transform:rotate(-20deg);
+    }
+    100%
+    {
+        transform:rotate(0deg);
+    }
+}
